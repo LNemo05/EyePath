@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">EyePath</string>
+    <string name="accessibility_service_description">EyePath 仅通过无障碍服务检测当前前台应用包名，用于判断是否干预。</string>
+    <string name="device_admin_receiver_description">允许 EyePath 狂暴模式在您行走且使用非白名单应用时锁定屏幕。</string>
+    <string name="permission_device_admin_detail">仅狂暴模式需要：行走时玩手机可立即锁屏。仅申请「强制锁定」，不会擦除数据或改密码。</string>
+    <string name="device_admin_activation_explanation">EyePath 仅在狂暴模式下需要设备管理员权限，用于行走时锁屏。您可随时在系统安全设置中撤销。</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_apps">应用</string>
+    <string name="tab_settings">设置</string>
+    <string name="tab_stats">统计</string>
+    <string name="tab_permissions">权限</string>
+
+    <string name="home_tagline">在您边走边用手机时进行强制提醒。</string>
+    <string name="home_guard_title">守护</string>
+    <string name="home_guard_enabled">已开启</string>
+    <string name="home_guard_disabled">已关闭</string>
+    <string name="home_global_mode">全局模式：%1$s</string>
+    <string name="home_permission_ready">权限状态：就绪</string>
+    <string name="home_permission_missing">权限状态：缺少 %1$s</string>
+    <string name="home_walking">正在行走：%1$s</string>
+    <string name="home_screen_on">屏幕亮起：%1$s</string>
+    <string name="home_unlocked">已解锁：%1$s</string>
+    <string name="home_runtime_unavailable">运行状态：守护关闭时不可用</string>
+    <string name="home_service_not_reporting">守护服务未上报状态。请关闭再打开守护，或检查省电/后台限制。</string>
+    <string name="home_foreground_app">前台应用：%1$s</string>
+    <string name="home_last_action_failed">上次操作失败：%1$s</string>
+    <string name="home_pause_title">临时暂停守护</string>
+    <string name="home_paused">已暂停</string>
+    <string name="home_pause_active">暂停中 · 约剩余 %1$d 分钟</string>
+    <string name="home_pause_resume">立即恢复</string>
+    <string name="home_pause_minutes">%1$d 分钟</string>
+    <string name="home_pause_custom_minutes">自定义分钟数</string>
+    <string name="home_pause_apply">应用</string>
+    <string name="home_pause_invalid">请输入正整数分钟数。</string>
+    <string name="home_pause_too_large">暂停时长过大。</string>
+    <string name="home_permission_setup_hint">配置权限不会豁免守护行为。请先停止行走。</string>
+    <string name="home_realtime_status">实时状态</string>
+    <string name="home_service_online">服务在线</string>
+    <string name="home_service_offline">服务离线</string>
+    <string name="home_status_walking">行走</string>
+    <string name="home_status_screen">屏幕</string>
+    <string name="home_status_unlocked">解锁</string>
+    <string name="home_status_foreground">前台</string>
+    <string name="error_start_service">无法启动 EyePath 服务，请检查权限。</string>
+    <string name="value_unknown">未知</string>
+    <string name="value_true">是</string>
+    <string name="value_false">否</string>
+
+    <string name="apps_title">应用策略</string>
+    <string name="apps_subtitle">为每个应用设置覆盖策略。受保护模式在对应权限就绪前无法启用。</string>
+    <string name="apps_last_change_failed">上次修改失败：%1$s</string>
+    <string name="apps_search_hint">按应用名或包名搜索</string>
+    <string name="apps_search_clear">清除搜索</string>
+    <string name="apps_empty_search">没有匹配的应用。</string>
+    <string name="apps_empty_catalog">暂无可用应用。</string>
+    <string name="apps_count">共 %1$d 个应用</string>
+    <string name="apps_loading">正在加载应用…</string>
+    <string name="apps_refreshing">正在刷新应用…</string>
+    <string name="apps_refresh">刷新</string>
+    <string name="apps_retry">重试</string>
+    <string name="apps_load_failed">无法加载应用：%1$s</string>
+    <string name="apps_filter_all">全部</string>
+    <string name="apps_empty_filter">没有该策略的应用。</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_last_save_failed">上次保存失败：%1$s</string>
+    <string name="settings_global_mode">默认干预模式</string>
+    <string name="settings_global_mode_hint">行走时使用手机的默认干预方式；可在「应用策略」里按应用覆盖。</string>
+    <string name="settings_change_mode_on_home">请在首页更改默认模式。</string>
+    <string name="settings_reminder_content">提醒内容</string>
+    <string name="settings_reminder_scope">用于温和模式通知、普通模式遮罩，以及普通或狂暴干预失败后的备用通知。狂暴模式成功立即锁屏时不会显示这些文字。</string>
+    <string name="settings_warning_title">警告标题</string>
+    <string name="settings_warning_message">警告正文</string>
+    <string name="settings_save_warning_copy">保存提醒内容</string>
+    <string name="settings_notification_settings">Android 通知设置</string>
+    <string name="settings_notification_settings_failed">无法打开 Android 通知设置。</string>
+    <string name="settings_exclude_from_recents">后台隐藏</string>
+    <string name="settings_exclude_from_recents_subtitle">在「最近任务」隐藏卡片</string>
+    <string name="settings_exclude_from_recents_confirm">隐藏卡片后可能导致部分设备无法给任务卡片加锁后台，建议先加锁后再隐藏，若已加锁或没有锁后台机制请继续</string>
+    <string name="settings_exclude_from_recents_continue">继续</string>
+    <string name="settings_exclude_from_recents_cancel">取消</string>
+    <string name="settings_language">应用语言</string>
+    <string name="settings_section_appearance">外观</string>
+    <string name="settings_section_guard">守护</string>
+    <string name="settings_section_reminder">提醒内容</string>
+    <string name="settings_section_system">通用</string>
+    <string name="settings_language_options_hint">跟随系统 / English / 简体中文</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_subtitle">版本、GitHub、检查更新</string>
+    <string name="settings_about_title">关于 EyePath</string>
+    <string name="settings_about_version">版本 %1$s</string>
+    <string name="settings_about_github_profile">我的 GitHub 主页</string>
+    <string name="settings_about_github_project">本项目 GitHub</string>
+    <string name="settings_about_check_update">检查更新</string>
+    <string name="settings_about_checking_update">检查中…</string>
+    <string name="settings_about_close">关闭</string>
+    <string name="settings_about_up_to_date">已是最新版本（%1$s）。</string>
+    <string name="settings_about_update_available">发现新版本 %1$s（当前 %2$s），正在打开发布页…</string>
+    <string name="settings_about_update_failed">检查更新失败：%1$s。正在打开发布页…</string>
+    <string name="settings_about_update_not_configured">尚未配置检查更新。请设置 WalkGuardLinks 中的 GitHub 用户名/仓库，并在仓库公开后再试。</string>
+    <string name="settings_open_link_failed">无法打开链接。</string>
+    <string name="language_option_system">跟随系统</string>
+    <string name="language_option_english">English</string>
+    <string name="language_option_chinese">简体中文</string>
+
+    <string name="stats_title">统计</string>
+    <string name="stats_today">今天：%1$s</string>
+    <string name="stats_interventions">干预次数</string>
+    <string name="stats_mild">温和</string>
+    <string name="stats_normal">普通</string>
+    <string name="stats_rage">狂暴</string>
+    <string name="stats_top_packages">拦截最多的应用包名</string>
+    <string name="stats_no_interceptions">今天尚无拦截记录。</string>
+    <string name="stats_effective_interventions">次有效打断</string>
+    <string name="stats_times">%1$d 次</string>
+
+    <string name="permissions_title">权限</string>
+    <string name="permissions_stop_walking_first">配置权限不会豁免守护行为。请先停止行走。</string>
+    <string name="permissions_guard_may_stop">若在守护运行期间更改权限，EyePath 可能会停止，直到所需权限全部恢复。</string>
+    <string name="permission_accessibility">无障碍服务</string>
+    <string name="permission_notifications">通知</string>
+    <string name="permission_activity_recognition">活动识别</string>
+    <string name="permission_runtime_notifications">运行时通知权限</string>
+    <string name="permission_overlay">悬浮窗</string>
+    <string name="permission_device_admin">设备管理员</string>
+    <string name="permission_battery">忽略电池优化</string>
+    <string name="permission_usage_stats">使用情况访问</string>
+    <string name="permission_usage_stats_detail">可选。当无障碍窗口根节点不可用时，帮助识别真实前台应用。</string>
+    <string name="permission_granted">已授予</string>
+    <string name="permission_missing">未授予</string>
+    <string name="action_open_accessibility">打开无障碍设置</string>
+    <string name="action_open_notifications">打开通知设置</string>
+    <string name="action_open_app_settings">打开应用设置</string>
+    <string name="action_open_overlay">打开悬浮窗设置</string>
+    <string name="action_activate_device_admin">激活设备管理员</string>
+    <string name="action_open_battery">打开电池设置</string>
+    <string name="action_open_usage_stats">打开使用情况访问设置</string>
+    <string name="action_go_to_settings">去设置</string>
+    <string name="permission_accessibility_hint">识别真实前台应用</string>
+    <string name="permission_notifications_hint">温和模式与状态通知</string>
+    <string name="permission_activity_recognition_hint">步态检测</string>
+    <string name="permission_overlay_hint">普通模式全屏遮罩</string>
+    <string name="permission_battery_hint">降低后台被杀概率</string>
+
+    <string name="guard_mode_mild">温和</string>
+    <string name="guard_mode_normal">普通</string>
+    <string name="guard_mode_rage">狂暴</string>
+    <string name="guard_mode_mild_desc">仅发送悬浮横幅通知，不遮挡屏幕。</string>
+    <string name="guard_mode_normal_desc">全屏警告遮罩并震动提醒。</string>
+    <string name="guard_mode_rage_desc">立即锁屏（需激活设备管理员）。</string>
+
+    <string name="app_policy_inherit">继承</string>
+    <string name="app_policy_whitelist">白名单</string>
+    <string name="app_policy_mild">温和</string>
+    <string name="app_policy_normal">普通</string>
+    <string name="app_policy_rage">狂暴</string>
+
+    <string name="missing_permission_accessibility">无障碍</string>
+    <string name="missing_permission_notifications">通知</string>
+    <string name="missing_permission_activity_recognition">活动识别</string>
+    <string name="missing_permission_overlay">悬浮窗</string>
+    <string name="missing_permission_device_admin">设备管理员</string>
+
+    <string name="error_missing_permissions">缺少必需的 EyePath 权限：%1$s</string>
+
+    <string name="default_warning_title">请停止行走或熄灭屏幕</string>
+    <string name="default_warning_message">边走边看手机很危险。停止行走、熄灭屏幕或关闭本次提醒后，EyePath 会自动解除提醒。</string>
+
+    <string name="overlay_dismiss_screen_cycle">本次亮屏不再提醒</string>
+    <string name="error_overlay_not_granted">未授予 EyePath 悬浮窗权限</string>
+
+    <string name="notification_channel_guard_status">EyePath 状态</string>
+    <string name="notification_channel_guard_status_desc">EyePath 前台服务持久状态通知。</string>
+    <string name="notification_channel_walk_warning">EyePath 行走警告</string>
+    <string name="notification_channel_walk_warning_desc">行走且解锁时以悬浮横幅提醒（可在系统通知设置中调整）。</string>
+    <string name="notification_guard_active">EyePath 运行中</string>
+    <string name="notification_status_content">模式：%1$s；状态：%2$s</string>
+    <string name="error_notifications_disabled">EyePath 通知已关闭</string>
+    <string name="error_notification_permission">未授予 EyePath 通知权限</string>
+
+    <string name="detection_state_format">屏幕=%1$s 解锁=%2$s 行走=%3$s 应用=%4$s</string>
+</resources>

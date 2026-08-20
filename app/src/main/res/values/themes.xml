@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.WalkGuard" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#B3261E</item>
+    </style>
+</resources>

@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">EyePath</string>
+    <string name="accessibility_service_description">EyePath uses Accessibility only to detect the current foreground app package while deciding whether to intervene.</string>
+    <string name="device_admin_receiver_description">Allows EyePath rage mode to lock the screen while you are walking and using non-whitelisted apps.</string>
+    <string name="permission_device_admin_detail">Required only for Rage mode: lets EyePath lock the screen when you use the phone while walking. EyePath only requests force-lock; it cannot wipe data or change passwords.</string>
+    <string name="device_admin_activation_explanation">EyePath needs device admin only to lock the screen in Rage mode while you are walking. You can revoke this anytime in system security settings.</string>
+
+    <!-- Navigation -->
+    <string name="tab_home">Home</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_stats">Stats</string>
+    <string name="tab_permissions">Permissions</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Aggressively interrupts phone use while walking.</string>
+    <string name="home_guard_title">Guard</string>
+    <string name="home_guard_enabled">Enabled</string>
+    <string name="home_guard_disabled">Disabled</string>
+    <string name="home_global_mode">Global mode: %1$s</string>
+    <string name="home_permission_ready">Permission health: ready</string>
+    <string name="home_permission_missing">Permission health: missing %1$s</string>
+    <string name="home_walking">Walking: %1$s</string>
+    <string name="home_screen_on">Screen on: %1$s</string>
+    <string name="home_unlocked">Unlocked: %1$s</string>
+    <string name="home_runtime_unavailable">Runtime status: unavailable while guard is off</string>
+    <string name="home_service_not_reporting">Guard service is not reporting status. Toggle guard off and on, or check battery restrictions.</string>
+    <string name="home_foreground_app">Foreground app: %1$s</string>
+    <string name="home_last_action_failed">Last action failed: %1$s</string>
+    <string name="home_pause_title">Temporarily pause guard</string>
+    <string name="home_paused">Paused</string>
+    <string name="home_pause_active">Paused · about %1$d min left</string>
+    <string name="home_pause_resume">Resume now</string>
+    <string name="home_pause_minutes">%1$d min</string>
+    <string name="home_pause_custom_minutes">Custom minutes</string>
+    <string name="home_pause_apply">Apply</string>
+    <string name="home_pause_invalid">Enter a positive whole number of minutes.</string>
+    <string name="home_pause_too_large">That pause duration is too large.</string>
+    <string name="home_permission_setup_hint">Permission setup is not exempt from guard behavior. Stop walking first.</string>
+    <string name="home_realtime_status">Live status</string>
+    <string name="home_service_online">Service online</string>
+    <string name="home_service_offline">Service offline</string>
+    <string name="home_status_walking">Walking</string>
+    <string name="home_status_screen">Screen</string>
+    <string name="home_status_unlocked">Unlocked</string>
+    <string name="home_status_foreground">Foreground</string>
+    <string name="error_start_service">Could not start EyePath service. Check permissions.</string>
+    <string name="value_unknown">unknown</string>
+    <string name="value_true">true</string>
+    <string name="value_false">false</string>
+
+    <!-- Apps -->
+    <string name="apps_title">App policies</string>
+    <string name="apps_subtitle">Choose per-app overrides. Protected modes are blocked until their permissions are ready.</string>
+    <string name="apps_last_change_failed">Last change failed: %1$s</string>
+    <string name="apps_search_hint">Search by app name or package</string>
+    <string name="apps_search_clear">Clear search</string>
+    <string name="apps_empty_search">No apps match your search.</string>
+    <string name="apps_empty_catalog">No apps are available.</string>
+    <string name="apps_count">%1$d apps</string>
+    <string name="apps_loading">Loading apps…</string>
+    <string name="apps_refreshing">Refreshing apps…</string>
+    <string name="apps_refresh">Refresh</string>
+    <string name="apps_retry">Retry</string>
+    <string name="apps_load_failed">Could not load apps: %1$s</string>
+    <string name="apps_filter_all">All</string>
+    <string name="apps_empty_filter">No apps use this policy.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_last_save_failed">Last save failed: %1$s</string>
+    <string name="settings_global_mode">Default intervention mode</string>
+    <string name="settings_global_mode_hint">Default intervention when walking while using the phone. Per-app policies can override this.</string>
+    <string name="settings_change_mode_on_home">Change the default mode on Home.</string>
+    <string name="settings_reminder_content">Reminder content</string>
+    <string name="settings_reminder_scope">Used for Mild notifications, Normal overlays, and fallback notifications when Normal or Rage actions fail. Successful immediate Rage locking does not show this text.</string>
+    <string name="settings_warning_title">Warning title</string>
+    <string name="settings_warning_message">Warning message</string>
+    <string name="settings_save_warning_copy">Save reminder content</string>
+    <string name="settings_notification_settings">Android notification settings</string>
+    <string name="settings_notification_settings_failed">Could not open Android notification settings.</string>
+    <string name="settings_exclude_from_recents">Hide from recents</string>
+    <string name="settings_exclude_from_recents_subtitle">Hide this app\'s card in Recents</string>
+    <string name="settings_exclude_from_recents_confirm">Hiding the card may prevent some devices from locking the task in recents. Lock it first if needed, then hide. Continue if already locked or the device has no lock-in-recents feature.</string>
+    <string name="settings_exclude_from_recents_continue">Continue</string>
+    <string name="settings_exclude_from_recents_cancel">Cancel</string>
+    <string name="settings_language">App language</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_section_guard">Guard</string>
+    <string name="settings_section_reminder">Reminder content</string>
+    <string name="settings_section_system">General</string>
+    <string name="settings_language_options_hint">System / English / 简体中文</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_subtitle">Version, GitHub, updates</string>
+    <string name="settings_about_title">About EyePath</string>
+    <string name="settings_about_version">Version %1$s</string>
+    <string name="settings_about_github_profile">My GitHub profile</string>
+    <string name="settings_about_github_project">Project on GitHub</string>
+    <string name="settings_about_check_update">Check for updates</string>
+    <string name="settings_about_checking_update">Checking…</string>
+    <string name="settings_about_close">Close</string>
+    <string name="settings_about_up_to_date">You are on the latest version (%1$s).</string>
+    <string name="settings_about_update_available">Update %1$s available (current %2$s). Opening release page…</string>
+    <string name="settings_about_update_failed">Update check failed: %1$s. Opening releases page…</string>
+    <string name="settings_about_update_not_configured">Update check is not configured. Set WalkGuardLinks.GITHUB_OWNER / GITHUB_REPO, then try again after the repo is public.</string>
+    <string name="settings_open_link_failed">Could not open link.</string>
+    <string name="language_option_system">Use system default</string>
+    <string name="language_option_english">English</string>
+    <string name="language_option_chinese">简体中文</string>
+
+    <!-- Stats -->
+    <string name="stats_title">Statistics</string>
+    <string name="stats_today">Today: %1$s</string>
+    <string name="stats_interventions">Interventions</string>
+    <string name="stats_mild">Mild</string>
+    <string name="stats_normal">Normal</string>
+    <string name="stats_rage">Rage</string>
+    <string name="stats_top_packages">Top intercepted packages</string>
+    <string name="stats_no_interceptions">No interceptions recorded today.</string>
+    <string name="stats_effective_interventions">effective interventions</string>
+    <string name="stats_times">%1$d times</string>
+
+    <!-- Permissions -->
+    <string name="permissions_title">Permissions</string>
+    <string name="permissions_stop_walking_first">Permission setup is not exempt from guard behavior. Please stop walking first.</string>
+    <string name="permissions_guard_may_stop">If the guard is active while permissions change, EyePath may stop until all required access is restored.</string>
+    <string name="permission_accessibility">Accessibility service</string>
+    <string name="permission_notifications">Notifications</string>
+    <string name="permission_activity_recognition">Activity recognition</string>
+    <string name="permission_runtime_notifications">Runtime notification permission</string>
+    <string name="permission_overlay">Overlay</string>
+    <string name="permission_device_admin">Device Admin</string>
+    <string name="permission_battery">Ignore battery optimizations</string>
+    <string name="permission_usage_stats">Usage access</string>
+    <string name="permission_usage_stats_detail">Optional. Helps detect the real foreground app when accessibility root is unavailable.</string>
+    <string name="permission_granted">Granted</string>
+    <string name="permission_missing">Missing</string>
+    <string name="action_open_accessibility">Open accessibility settings</string>
+    <string name="action_open_notifications">Open notification settings</string>
+    <string name="action_open_app_settings">Open app settings</string>
+    <string name="action_open_overlay">Open overlay settings</string>
+    <string name="action_activate_device_admin">Activate Device Admin</string>
+    <string name="action_open_battery">Open battery settings</string>
+    <string name="action_open_usage_stats">Open usage access settings</string>
+    <string name="action_go_to_settings">Go to settings</string>
+    <string name="permission_accessibility_hint">Detect the real foreground app</string>
+    <string name="permission_notifications_hint">Mild mode and status notifications</string>
+    <string name="permission_activity_recognition_hint">Gait detection</string>
+    <string name="permission_overlay_hint">Normal mode full-screen overlay</string>
+    <string name="permission_battery_hint">Reduce background kill risk</string>
+
+    <!-- Enums: GuardMode -->
+    <string name="guard_mode_mild">Mild</string>
+    <string name="guard_mode_normal">Normal</string>
+    <string name="guard_mode_rage">Rage</string>
+    <string name="guard_mode_mild_desc">Heads-up notification only (no overlay).</string>
+    <string name="guard_mode_normal_desc">Full-screen warning overlay and vibration.</string>
+    <string name="guard_mode_rage_desc">Locks the screen immediately (requires Device Admin).</string>
+
+    <!-- Enums: AppPolicy -->
+    <string name="app_policy_inherit">Inherit</string>
+    <string name="app_policy_whitelist">Whitelist</string>
+    <string name="app_policy_mild">Mild</string>
+    <string name="app_policy_normal">Normal</string>
+    <string name="app_policy_rage">Rage</string>
+
+
+    <string name="missing_permission_accessibility">Accessibility</string>
+    <string name="missing_permission_notifications">Notifications</string>
+    <string name="missing_permission_activity_recognition">Activity recognition</string>
+    <string name="missing_permission_overlay">Overlay</string>
+    <string name="missing_permission_device_admin">Device Admin</string>
+
+    <string name="error_missing_permissions">Missing required EyePath permissions: %1$s</string>
+
+    <!-- Default warning copy (settings / interventions) -->
+    <string name="default_warning_title">Stop walking or turn off the screen</string>
+    <string name="default_warning_message">Using your phone while walking is dangerous. Stop walking, turn off the screen, or dismiss this warning for the current screen cycle and EyePath will stop reminding you.</string>
+
+    <!-- Overlay -->
+    <string name="overlay_dismiss_screen_cycle">Don\'t remind again this screen-on cycle</string>
+    <string name="error_overlay_not_granted">EyePath overlay permission is not granted</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_guard_status">EyePath status</string>
+    <string name="notification_channel_guard_status_desc">Persistent EyePath foreground-service status.</string>
+    <string name="notification_channel_walk_warning">EyePath walking warning</string>
+    <string name="notification_channel_walk_warning_desc">Heads-up (floating banner) warnings while walking with the phone unlocked. You can change this in system notification settings.</string>
+    <string name="notification_guard_active">EyePath active</string>
+    <string name="notification_status_content">Mode: %1$s; State: %2$s</string>
+    <string name="error_notifications_disabled">EyePath notifications are disabled</string>
+    <string name="error_notification_permission">EyePath notification permission is not granted</string>
+
+    <!-- FGS status detection state -->
+    <string name="detection_state_format">screen=%1$s unlocked=%2$s walking=%3$s app=%4$s</string>
+</resources>
